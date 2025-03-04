@@ -1,74 +1,23 @@
-
-
--- --------------------------------------------------------
-
 --
--- Table structure for table `billing`
+-- Table structure for table `addon_account_data`
 --
 
-CREATE TABLE `billing` (
+CREATE TABLE `addon_account_data` (
   `id` int(11) NOT NULL,
-  `identifier` varchar(60) NOT NULL,
-  `sender` varchar(60) NOT NULL,
-  `target_type` varchar(50) NOT NULL,
-  `target` varchar(40) NOT NULL,
-  `label` varchar(255) NOT NULL,
-  `amount` int(11) NOT NULL
+  `account_name` varchar(100) DEFAULT NULL,
+  `money` int(11) NOT NULL,
+  `owner` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB;
 
+--
+-- Dumping data for table `addon_account_data`
+--
+
+INSERT INTO `addon_account_data` (`id`, `account_name`, `money`, `owner`) VALUES
+(1, 'society_cardealer', 0, NULL),
+(2, 'society_police', 0, NULL),
+(3, 'society_ambulance', 0, NULL),
+(4, 'society_mechanic', 0, NULL),
+(5, 'society_taxi', 0, NULL);
 -- --------------------------------------------------------
-
---
--- Table structure for table `cardealer_vehicles`
---
-
-CREATE TABLE `cardealer_vehicles` (
-  `id` int(11) NOT NULL,
-  `vehicle` varchar(255) NOT NULL,
-  `price` int(11) NOT NULL
-) ENGINE=InnoDB;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `multicharacter_slots`
---
-
-CREATE TABLE `multicharacter_slots` (
-	`identifier` VARCHAR(60) NOT NULL,
-	`slots` INT(11) NOT NULL,
-	PRIMARY KEY (`identifier`) USING BTREE,
-	INDEX `slots` (`slots`) USING BTREE
-) ENGINE=InnoDB;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `datastore`
---
-
-CREATE TABLE `datastore` (
-  `name` varchar(60) NOT NULL,
-  `label` varchar(100) NOT NULL,
-  `shared` int(11) NOT NULL
-) ENGINE=InnoDB;
-
---
--- Dumping data for table `datastore`
---
-
-INSERT INTO `datastore` (`name`, `label`, `shared`) VALUES
-('property', 'Property', 0),
-('society_ambulance', 'EMS', 1),
-('society_mechanic', 'Mechanic', 1),
-('society_police', 'Police', 1),
-('society_taxi', 'Taxi', 1);
-
-
-INSERT INTO `datastore` (`name`, `label`, `shared`) VALUES
-    ('user_ears', 'Ears', 0),
-    ('user_glasses', 'Glasses', 0),
-    ('user_helmet', 'Helmet', 0),
-    ('user_mask', 'Mask', 0);
-    
 
