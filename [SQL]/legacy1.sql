@@ -12,10 +12,10 @@ CREATE TABLE `addon_account` (
 
 INSERT INTO `addon_account` (`name`, `label`, `shared`) VALUES
 ('caution', 'caution', 0),
-('society_ambulance', 'EMS', 1),
-('society_cardealer', 'Cardealer', 1),
-('society_mechanic', 'Mechanic', 1),
-('society_police', 'Police', 1),
+('society_ambulance', 'Ambulancier', 1),
+('society_cardealer', 'Concessionnaire Automobile', 1),
+('society_mechanic', 'Mechanicien', 1),
+('society_police', 'Policier', 1),
 ('society_taxi', 'Taxi', 1);
 
 -- --------------------------------------------------------
