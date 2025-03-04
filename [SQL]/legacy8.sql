@@ -1,20 +1,56 @@
+-- --------------------------------------------------------
+
 --
--- ESX Bankerjob
+-- Table structure for table `items`
 --
 
-INSERT INTO `addon_account` (name, label, shared) VALUES
-	('society_banker','Bank',1),
-	('bank_savings','Savings account',0)
-;
+CREATE TABLE `items` (
+  `name` varchar(50) NOT NULL,
+  `label` varchar(50) NOT NULL,
+  `weight` int(11) NOT NULL DEFAULT 1,
+  `rare` tinyint(4) NOT NULL DEFAULT 0,
+  `can_remove` tinyint(4) NOT NULL DEFAULT 1
+) ENGINE=InnoDB;
 
-INSERT INTO `jobs` (name, label) VALUES
-	('banker','Banker')
-;
+--
+-- Dumping data for table `items`
+--
 
-INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_female) VALUES
-	('banker',0,'advisor','Consultant',10,'{}','{}'),
-	('banker',1,'banker','Banker',20,'{}','{}'),
-	('banker',2,'business_banker',"Investment banker",30,'{}','{}'),
-	('banker',3,'trader','Broker',40,'{}','{}'),
-	('banker',4,'boss','Boss',0,'{}','{}')
-;
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
+('alive_chicken', 'Living chicken', 1, 0, 1),
+('bandage', 'Bandage', 2, 0, 1),
+('blowpipe', 'Blowtorch', 2, 0, 1),
+('bread', 'Bread', 1, 0, 1),
+('cannabis', 'Cannabis', 3, 0, 1),
+('carokit', 'Body Kit', 3, 0, 1),
+('carotool', 'Tools', 2, 0, 1),
+('clothe', 'Cloth', 1, 0, 1),
+('copper', 'Copper', 1, 0, 1),
+('cutted_wood', 'Cut wood', 1, 0, 1),
+('diamond', 'Diamond', 1, 0, 1),
+('essence', 'Gas', 1, 0, 1),
+('fabric', 'Fabric', 1, 0, 1),
+('fish', 'Fish', 1, 0, 1),
+('radio', 'Radio', 1, 0, 1),
+('fixkit', 'Repair Kit', 3, 0, 1),
+('fixtool', 'Repair Tools', 2, 0, 1),
+('gazbottle', 'Gas Bottle', 2, 0, 1),
+('gold', 'Gold', 1, 0, 1),
+('iron', 'Iron', 1, 0, 1),
+('marijuana', 'Marijuana', 2, 0, 1),
+('medikit', 'Medikit', 2, 0, 1),
+('packaged_chicken', 'Chicken fillet', 1, 0, 1),
+('packaged_plank', 'Packaged wood', 1, 0, 1),
+('petrol', 'Oil', 1, 0, 1),
+('petrol_raffin', 'Processed oil', 1, 0, 1),
+('phone', 'Phone', 1, 0, 1),
+('slaughtered_chicken', 'Slaughtered chicken', 1, 0, 1),
+('stone', 'Stone', 1, 0, 1),
+('washed_stone', 'Washed stone', 1, 0, 1),
+('water', 'Water', 1, 0, 1),
+('wood', 'Wood', 1, 0, 1),
+('wool', 'Wool', 1, 0, 1);
+
+
+
+
