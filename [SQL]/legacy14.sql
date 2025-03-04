@@ -1,16 +1,3 @@
--- --------------------------------------------------------
-
---
--- Table structure for table `user_licenses`
---
-
-CREATE TABLE `user_licenses` (
-  `id` int(11) NOT NULL,
-  `type` varchar(60) NOT NULL,
-  `owner` varchar(60) NOT NULL
-) ENGINE=InnoDB;
-
-
 
 
 --
