@@ -15,18 +15,18 @@ CREATE TABLE `jobs` (
 --
 
 INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
-('ambulance', 'EMS', 0),
-('cardealer', 'Cardealer', 0),
-('fisherman', 'Fisherman', 0),
-('fueler', 'Fueler', 0),
-('lumberjack', 'Lumberjack', 0),
-('mechanic', 'Mechanic', 0),
-('miner', 'Miner', 0),
-('police', 'LSPD', 0),
-('reporter', 'Reporter', 0),
-('slaughterer', 'Butcher', 0),
-('tailor', 'Tailor', 0),
+('ambulance', 'Ambulancier', 0),
+('cardealer', 'Concessionnaire Automobile', 0),
+('fisherman', 'Pecheur', 0),
+('fueler', 'Ravitailleur', 0),
+('lumberjack', 'Bucheron', 0),
+('mechanic', 'Mechanicien', 0),
+('miner', 'Mineur', 0),
+('police', 'Policier', 0),
+('reporter', 'Journaliste', 0),
+('slaughterer', 'Boucher', 0),
+('tailor', 'Couturier', 0),
 ('taxi', 'Taxi', 0),
-('unemployed', 'Unemployed', 0);
+('unemployed', 'Sans emploi', 0);
 
 
